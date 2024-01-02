@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+<h1>Lista opinii</h1>
+
+{% for review in reviews %}
+  <div>
+    <h3>{{ review.author }}</h3>
+    <p>{{ review.content }}</p>
+  </div>
+{% endfor %}
